@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Двухколоночный макет</title>
+  <style>
+   .sidebar, .content, footer {
+    box-sizing: border-box; /* padding не влияет на ширину */
+    padding: 10px; /* Поля вокруг текста */
+   }
+   .row {
+    overflow: hidden; /* Отменяем обтекание */
+   }
+   .sidebar, .content { min-height: 100px; }
+   .sidebar {
+    float: left; /* Формируем колонки */
+    width: 200px; /* Ширина колонки */
+    background: #ffead0; /* Цвет фона */
+    height: 500px;
+   }
+   .content {
+    margin-left: 210px; /* Отступ слева */
+    background: #c8eaf5; /* Цвет фона */ 
+    height: 500px;
+   }
+   footer {
+    background: #e2edc1; /* Цвет фона */
+    margin-top: 10px; /* Отступ сверху */
+   }
+  </style>
+ </head>
+ <body>
+  <div class="row">
+   <section class="sidebar">Боковая панель</section>
+   <section class="content">Содержимое</section>
+  </div>
+  <footer>Подвал</footer>
+ </body>
+</html>

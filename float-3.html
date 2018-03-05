@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Двухколоночный макет</title>
+  <style>
+   .sidebar, .content, footer {
+    box-sizing: border-box; /* padding не влияет на ширину */
+    padding: 10px; /* Поля вокруг текста */
+   }
+   .row {
+    overflow: hidden; /* Отменяем обтекание */
+   }
+   .sidebar, .content { min-height: 100px; }
+   .sidebar {
+    float: left; /* Формируем колонки */
+    width: 450px; /* Ширина колонки */
+    background: #ffead0; /* Цвет фона */
+    height: 1060px;
+   }
+   .content {
+    margin-left: 460px; /* Отступ слева */
+    background: #c8eaf5; /* Цвет фона */ 
+    height:100%;
+   }
+   header{
+    background: #6d7679; /* Цвет фона */ 
+    margin-bottom: 10px; /* Отступ сверху */
+    height: 100px;
+   }
+   footer {
+    background: #e2edc1; /* Цвет фона */
+    margin-top: 10px; /* Отступ сверху */
+   }
+   .leftp {
+     float: left;
+     height: 80px;
+     width: 15%;
+     background: #e2edc1; /* Цвет фона */
+     margin-top:10px;
+     margin-left: 10px;
+    }
+   .rightp{
+     float: right;
+     height: 80px;
+     width: 500px;
+     background: #e2edc1; /* Цвет фона */
+     margin-top:10px;
+     margin-right: 10px;
+    }
+    .menu{
+	    list-style:none;
+      margin:0;
+      padding:10px;
+      overflow: auto;
+    }
+
+    .menu li a{
+      width: 300px;
+      height: 300px;
+      display:block;
+      padding:10px;
+      background:#ccf;
+    }
+    .menu li{
+      margin:10px;
+      float:left;
+
+    }
+  </style>
+ </head>
+ <body>
+   <header>
+      <section class="leftp">Left панель</section>
+      <section class="rightp">Right панель</section>
+   </header>
+  <div class="row">
+   <section class="sidebar">Боковая панель</section>
+   <section class="content">
+    <ul class="menu">
+      <li><a href="#">Пункт 1</a></li>
+      <li><a href="#">Пункт 2</a></li>
+      <li><a href="#">Пункт 3</a></li>
+      <li><a href="#">Пункт 4</a></li>
+      <li><a href="#">Пункт 5</a></li>
+      <li><a href="#">Пункт 6</a></li>
+      <li><a href="#">Пункт 7</a></li>
+      <li><a href="#">Пункт 8</a></li>
+      <li><a href="#">Пункт 9</a></li>
+    <ul>
+   </section>
+  </div>
+  <footer>Подвал</footer>
+ </body>
+</html>

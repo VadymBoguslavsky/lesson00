@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Трёхколоночный макет</title>
+  <style>
+   .sidebar, .content {
+    box-sizing: border-box; padding: 10px; min-height: 100px;
+   }
+   .row { overflow: hidden; }
+   .sidebar {
+    float: right;
+    width: 300px; background: #ffead0;
+    height: 300px;
+   }
+   .content {
+    margin-right: 310px;
+    margin-left: 310px;
+    background: #c8eaf5; 
+    height: 300px;
+
+
+   }
+   .nav {
+    float: left; /* Колонка слева */
+    width: 300px; /* Ширина колонки */
+    background: #fde9f1;
+    height: 300px;
+   } 
+   .header{
+    background: #302b24;
+    height: 100px;
+    margin-bottom: 10px
+   }
+   .footer{
+    background: #b46709;
+    height: 100px;
+    margin-top: 10px
+   }
+  </style>
+ </head>
+ <body>
+  <div class="row">
+   <header class="header">хедер</header>
+   <section class="nav">Навигация</section>
+   <section class="sidebar">Боковая панель</section>
+   <section class="content">Содержимое</section>
+   <footer class="footer">футер</footer>
+  </div>
+ </body>
+</html>

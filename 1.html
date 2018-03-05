@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+.orange {
+width: 70px;
+height: 70px;
+background-color: orange;
+z-index: 1;
+position:absolute;
+}
+
+.green {
+width: 500px;
+height: 500px;
+background-color: green;
+z-index: 0;
+position:relative;
+}
+
+#a1 {
+left: 0%;
+margin-left: -15%;
+}
+
+#a2 {
+left: 100%;
+margin-left: 15%;
+}
+
+#a3 {
+left: 0%;
+top: 100%;
+margin-top: -70px;
+margin-left: -15%
+}
+
+#a4 {
+left: 100%;
+top: 100%;
+margin-top: -70px;
+margin-left: 15%;
+}
+</style> 
+</head> 
+<body> 
+
+
+<div class='green'>
+
+<div id='a1' class='orange'></div>
+
+<div id='a2' class='orange'></div>
+
+<div id='a3' class='orange'></div>
+
+<div id='a4' class='orange'></div>
+
+</div>
+
+</body> 
+</html>
